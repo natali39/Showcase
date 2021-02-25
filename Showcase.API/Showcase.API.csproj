@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Showcase.Application\Showcase.Application.csproj" />
+    <ProjectReference Include="..\Showcase.DataAccess.Stub\Showcase.DataAccess.Stub.csproj" />
+    <ProjectReference Include="..\Showcase.Domain\Showcase.Domain.csproj" />
+  </ItemGroup>
+
+
+</Project>
