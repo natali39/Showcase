@@ -13,6 +13,11 @@ namespace ShowcaseWeb.Domain.Models
         public DateTime RemoveDate { get; set; }
         public List<Product> Products { get; }
 
+        public Showcase()
+        {
+
+        }
+
         public Showcase(string name, int volume)
         {
             Name = name;
@@ -32,7 +37,5 @@ namespace ShowcaseWeb.Domain.Models
             Products.Add(product);
             return true;
         }
-
-
     }
 }

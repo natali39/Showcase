@@ -23,15 +23,15 @@ namespace ShowcaseWeb.API.Controllers
         }
 
         [HttpGet]
-        public ActionResult<bool> Get()
+        public ActionResult<List<Showcase>> Get()
         {
-            return Ok(showcaseService.Get());
+            return showcaseService.Get();
         }
 
         [HttpGet]
-        public ActionResult<bool> Get(int showcaseId)
+        public ActionResult<Showcase> Get(int showcaseId)
         {
-            return Ok(showcaseService.Get(showcaseId));
+            return showcaseService.Get(showcaseId);
         }
     }
 }
